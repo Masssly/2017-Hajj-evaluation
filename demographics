@@ -1,0 +1,1 @@
+age_vrs_gender<-ggplot(demo, aes(x = `Age bracket`,fill=Gender)) + geom_bar()
