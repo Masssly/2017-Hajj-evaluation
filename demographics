@@ -1,1 +1,2 @@
 age_vrs_gender<-ggplot(demo, aes(x = `Age bracket`,fill=Gender)) + geom_bar()
+edu_vrs_mar<-ggplot(demo, aes(x = `Education level`,fill=`Marital status`)) + geom_bar(position = "stack")
