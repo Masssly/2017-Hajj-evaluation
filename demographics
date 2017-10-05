@@ -26,3 +26,5 @@ ggplot(mydata100, aes(gender, fill=workshop ) ) +
 
 Education vrs gender<- barplot(table(y = Gender,x = Education), main="Education vrs Gender", ylab = "Gender Representation",xlab = "Level of Education", col=colours)
 add legend <- legend("topright", c("Female","Male"), cex=1.3, bty="n", fill=colours)
+
+beside=TRUE,
