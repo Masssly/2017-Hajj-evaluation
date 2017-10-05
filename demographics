@@ -2,3 +2,17 @@ age_vrs_gender<-ggplot(demo, aes(x = `Age bracket`,fill=Gender)) + geom_bar()
 edu_vrs_mar<-ggplot(demo, aes(x = `Education level`,fill=`Marital status`)) + geom_bar(position = "stack" )
 Residence_vrs_Gender<-ggplot(demo, aes(x = `Residence`,fill=`Gender`)) + geom_bar(position = "stack")
 Emp_vrs_gender<-ggplot(demo, aes(x = `Employment Status`,fill=`Gender`)) + geom_bar(position = "stack")
++ ylab("Respondents gender representation") + xlab("Frequency of Respondents employment status")
+
+
+library(reshape2)
+library(dplyr)
+df.melt <- melt(df, id="gender")
+bar <- group_by(df.melt, variable, gender)%.%summarise(mean=mean(value))
+
+http://www.theanalysisfactor.com/r-11-bar-charts/
+
+http://r4stats.com/examples/graphics-ggplot2/
+
+ggplot(mydata100, aes(gender, fill=workshop ) ) +
+  geom_bar(position="dodge")
