@@ -2,7 +2,7 @@ age_vrs_gender<-ggplot(demo, aes(x = `Age bracket`,fill=Gender)) + geom_bar()
 edu_vrs_mar<-ggplot(demo, aes(x = `Education level`,fill=`Marital status`)) + geom_bar(position = "stack" )
 Residence_vrs_Gender<-ggplot(demo, aes(x = `Residence`,fill=`Gender`)) + geom_bar(position = "stack")
 Emp_vrs_gender<-ggplot(demo, aes(x = `Employment Status`,fill=`Gender`)) + geom_bar(position = "stack")
-+ ylab("Respondents gender representation") + xlab("Frequency of Respondents employment status")
++ ylab("Respondents gender representation") + xlab("Frequency of Respondents employment status") + ggtitle("Heading goes here")
 
 
 library(reshape2)
