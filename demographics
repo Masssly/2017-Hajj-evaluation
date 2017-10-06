@@ -28,3 +28,10 @@ Education vrs gender<- barplot(table(y = Gender,x = Education), main="Education 
 add legend <- legend("topright", c("Female","Male"), cex=1.3, bty="n", fill=colours)
 
 beside=TRUE,
+
+==3D pie chart==
+library(plotrix)
+pie3D(mydata$FR, labels = mydata$group, main = "An exploded 3D pie chart", explode=0.1, radius=.9, labelcex = 1.2,  start=0.7)
+
+> pie3D(table(cat), main = "Category of Respondents", explode=.5, radius=1.5, labelcex = 1.2,  start=2.09, labels=pielabels, theta=1.2)
+> pie3D(table(cat), explode=.5, radius=1.5, labelcex = 1.2,  start=2.09, labels=pielabels, theta=1.2)
