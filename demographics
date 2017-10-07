@@ -35,3 +35,5 @@ pie3D(mydata$FR, labels = mydata$group, main = "An exploded 3D pie chart", explo
 
 > pie3D(table(cat), main = "Category of Respondents", explode=.5, radius=1.5, labelcex = 1.2,  start=2.09, labels=pielabels, theta=1.2)
 > pie3D(table(cat), explode=.5, radius=1.5, labelcex = 1.2,  start=2.09, labels=pielabels, theta=1.2)
+
+axes=FALSE, frame.plot=TRUE # To remove the axis labels on a bar chart
