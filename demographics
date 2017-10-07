@@ -37,3 +37,13 @@ pie3D(mydata$FR, labels = mydata$group, main = "An exploded 3D pie chart", explo
 > pie3D(table(cat), explode=.5, radius=1.5, labelcex = 1.2,  start=2.09, labels=pielabels, theta=1.2)
 
 axes=FALSE, frame.plot=TRUE # To remove the axis labels on a bar chart
+
+==Likert==
+> likert_2 <- data.frame(as.factor(extent$clear), as.factor(extent$tools), as.factor(extent$support)
++ )
+> likert_2 <- data.frame(as.factor(extent$clear), as.factor(extent$tools), as.factor(extent$support))
+> levels_2 <- list(c("Disagree", "Agree", "DDDD", "AAAA", "RRRRR"))
+> items <- list(c("Q1", "Q2", "Q3")
++ )
+> items <- list(c("Q1", "Q2", "Q3"))
+> install.packages("sjPlot")
