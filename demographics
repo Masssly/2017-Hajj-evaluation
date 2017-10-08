@@ -47,3 +47,13 @@ axes=FALSE, frame.plot=TRUE # To remove the axis labels on a bar chart
 + )
 > items <- list(c("Q1", "Q2", "Q3"))
 > install.packages("sjPlot")
+
+
+likert_2 <- data.frame(as.factor(extent$`Clear tasks`), as.factor(extent$`Tools and resources`), as.factor(extent$Support))
+levels_2 <- list(c("Strongly Disagree", "Disagree", "Neutral", "Agree", "Strongly Agree"))
+items <- list(c("Q1", "Q2", "Q3"))
+> sjp.likert(likert_2)
+
+
+==Best likert scale plot so far==
+http://rcompanion.org/handbook/E_03.html
