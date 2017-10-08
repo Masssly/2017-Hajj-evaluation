@@ -61,3 +61,6 @@ http://rcompanion.org/handbook/E_03.html
 you can change the color
 > myColor <- c("light gray","gray","blue","light blue","white")
 > plot(results, col=myColor)
+
+==Wordcloud==
+https://www.r-bloggers.com/building-wordclouds-in-r/
