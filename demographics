@@ -57,3 +57,7 @@ items <- list(c("Q1", "Q2", "Q3"))
 
 ==Best likert scale plot so far==
 http://rcompanion.org/handbook/E_03.html
+
+you can change the color
+> myColor <- c("light gray","gray","blue","light blue","white")
+> plot(results, col=myColor)
