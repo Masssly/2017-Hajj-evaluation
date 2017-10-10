@@ -67,3 +67,5 @@ https://www.r-bloggers.com/building-wordclouds-in-r/
 
 ==Seek help and showing data==
 dput(yourdata)
+===Subset and show part of your data===
+https://dzone.com/articles/learn-r-how-extract-rows
