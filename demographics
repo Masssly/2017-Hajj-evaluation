@@ -64,3 +64,6 @@ you can change the color
 
 ==Wordcloud==
 https://www.r-bloggers.com/building-wordclouds-in-r/
+
+==Seek help and showing data==
+dput(yourdata)
