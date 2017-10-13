@@ -85,3 +85,19 @@ https://dzone.com/articles/learn-r-how-extract-rows
 +               position = "stack", vjust = 1) +
 +     scale_y_continuous(labels =  c("0%", "100%"),
 +                        breaks = c(0, 100))
+
+
+> orientation %>%
++     gather(variable, value) %>%
++     ggplot()+
++     geom_bar(aes(x = variable, fill = value),
++              color = " black",
++              position = "stack", show.legend = FALSE)+
++     geom_text(stat = "count",
++               aes(x = variable,
++                   label =  value,
++                   y = ..count..,
++                   group = value),
++               position = "stack", vjust = 1) +
++     scale_y_continuous(labels =  c("0%", "100%"),
++                        breaks = c(0, 100))+ylab("Percentatge proportion of responses")+ theme(axis.text=element_text(size=14),  axis.title=element_text(size=14)) + xlab(NULL)
