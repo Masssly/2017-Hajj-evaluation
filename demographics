@@ -101,3 +101,13 @@ https://dzone.com/articles/learn-r-how-extract-rows
 +               position = "stack", vjust = 1) +
 +     scale_y_continuous(labels =  c("0%", "100%"),
 +                        breaks = c(0, 100))+ylab("Percentatge proportion of responses")+ theme(axis.text=element_text(size=14),  axis.title=element_text(size=14)) + xlab(NULL)
+
+
+==If you want percentages on the y-axis and labeled on the bars:==
+library(ggplot2)
+library(scales)
+ggplot(mtcars, aes(x = as.factor(mtcars$am))) +
+  geom_bar(aes(y = (..count..)/sum(..count..))) +
+  geom_text(aes(y = ((..count..)/sum(..count..)), label = scales::percent((..count..)/sum(..count..))), stat = "count", vjust = -0.25) +
+  scale_y_continuous(labels = percent) +
+  labs(title = "Manual vs. Automatic Frequency", y = "Percent", x = "Automatic Transmission")
